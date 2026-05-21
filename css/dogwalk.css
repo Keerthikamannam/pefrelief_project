@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('dogwalk.jpg') no-repeat center/cover;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.overlay h1 {
+  font-size: 40px;
+}
+
+.overlay p {
+  margin-top: 10px;
+}
+
+/* FORM */
+.form-box {
+  background: #fff;
+  color: #000;
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* DAYS */
+.days {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.days button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+}
+
+.days button.active {
+  background: #1c79c0;
+  color: #fff;
+}
+
+/* BUTTON */
+.book-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1c79c0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* STEPS */
+.steps {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* WHY */
+.why {
+  background: #f0e9dd;
+  padding: 50px;
+  text-align: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.feature {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.result {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: none;
+  color: #000;
+  text-align: left;
+}
+
+.result h3 {
+  color: #1c79c0;
+  margin-bottom: 10px;
+}

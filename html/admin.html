@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="adoption.css">
+</head>
+
+<body>
+
+<header>
+    <h1>⚙️ Admin Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<!-- ADD PET -->
+<section class="admin">
+    <h2>Add New Pet</h2>
+
+    <input type="text" id="petName" placeholder="Pet Name">
+    <input type="text" id="petBreed" placeholder="Breed">
+    <input type="number" id="petAge" placeholder="Age">
+    <input type="file" id="petImage" accept="image/*">
+
+    <select id="petType">
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Small">Small</option>
+    </select>
+
+    <button onclick="addPet()">Add Pet</button>
+</section>
+
+<!-- VIEW + REMOVE PETS -->
+<section>
+    <h2 style="text-align:center;">Manage Pets</h2>
+    <div class="container" id="petContainer"></div>
+</section>
+
+<script src="adoption.js"></script>
+
+<script>
+    // 🔐 protect admin page
+    if (sessionStorage.getItem("adminLogged") !== "true") {
+        window.location.href = "adoption.html";
+    } else {
+        // ✅ load pets when admin enters
+        window.onload = () => {
+            loadPets();
+        };
+    }
+
+    function logout() {
+        sessionStorage.removeItem("adminLogged");
+        window.location.href = "adoption.html";
+    }
+</script>
+
+</body>
+</html>

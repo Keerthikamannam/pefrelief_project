@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pet Adoption System</title>
+<link rel="stylesheet" href="adoption.css">
+</head>
+
+<body>
+<header>
+    <h1>🐾 Pet Adoption Center</h1>
+
+<div class="mode-switch">
+    <button id="adminBtn" onclick="handleAdminToggle()">Admin Login</button>
+</div>
+</header>
+<!-- FILTER -->
+<section class="filters">
+    <input type="text" id="search" placeholder="Search by breed...">
+    <select id="typeFilter">
+        <option value="all">All Types</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Small">Small</option>
+    </select>
+    <select id="ageFilter">
+        <option value="all">All Ages</option>
+        <option value="young">0-2</option>
+        <option value="adult">3-6</option>
+        <option value="senior">7+</option>
+    </select>
+</section>
+
+<!-- PETS -->
+<section class="container" id="petContainer"></section>
+<!-- DISCOVER MORE BUTTON -->
+<div style="text-align:center; margin:20px;">
+  <button id="loadMoreBtn" onclick="loadDiscoverPets()">🔍 Load More</button>
+</div>
+
+<!-- DISCOVER SECTION (hidden initially) -->
+<h2 id="discoverTitle" style="display:none; text-align:center;">🌍 Discover more options</h2>
+<section class="container" id="apiContainer" style="display:none;"></section>
+
+<!-- ADMIN PANEL -->
+<section id="adminPanel" class="admin hidden">
+    <h2>📊 Admin Panel</h2>
+
+    <input type="text" id="petName" placeholder="Pet Name">
+    <input type="text" id="petBreed" placeholder="Breed">
+    <input type="number" id="petAge" placeholder="Age">
+    <input type="file" id="petImage" accept="image/*">
+    <select id="adminpetType">
+        <option>Dog</option>
+        <option>Cat</option>
+        <option>Small </option>
+    </select>
+    <button type="button" onclick="addPet()">Add Pet</button>
+</section>
+<!-- ADMIN LOGIN POPUP -->
+<div id="adminLogin" class="popup">
+    <div class="popup-content">
+        <h2>Admin Login</h2>
+        <input type="password" id="adminPassword" placeholder="Enter Password">
+        <p id="loginError"></p>
+        <button onclick="loginAdmin()">Login</button>
+        <button onclick="closeAdminLogin()">Cancel</button>
+    </div>
+</div>
+
+<!-- FORM -->
+<div id="formPopup" class="popup">
+  <div class="popup-content">
+    <h2>Adopt Pet</h2>
+
+    <form id="adoptForm">
+
+      <h3>👤 Personal Information</h3>
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="email" id="email" placeholder="Email Address">
+      <input type="text" id="phone" placeholder="Phone Number">
+      <textarea id="address" placeholder="Full Address"></textarea>
+
+      <h3>🏠 Living Details</h3>
+      <select id="homeType">
+        <option value="">Type of Home</option>
+        <option value="Apartment">Apartment</option>
+        <option value="House">Independent House</option>
+      </select>
+
+      <select id="ownership">
+        <option value="">Own or Rent</option>
+        <option value="Own">Own</option>
+        <option value="Rent">Rent</option>
+      </select>
+
+      <label>Do you have a yard?</label>
+      <div class="radio-group">
+          <label><input type="radio" name="yard" value="Yes"> Yes</label>
+          <label><input type="radio" name="yard" value="No"> No</label>
+      </div>
+
+      <h3>🐾 Pet Experience</h3>
+      <select id="experience">
+        <option value="">Owned pets before?</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <textarea id="petExperience" placeholder="Tell us about your experience with pets"></textarea>
+
+      <h3>❤️ Adoption Details</h3>
+      <select id="petType">
+        <option value="">Preferred Pet</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <textarea id="reason" placeholder="Why do you want to adopt this pet?"></textarea>
+
+      <p id="formError"></p>
+
+      <button type="submit">Submit Application</button>
+      <button type="button" onclick="closeForm()">Cancel</button>
+
+    </form>
+  </div>
+</div>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { 
+  getFirestore, collection, addDoc, getDocs, deleteDoc, doc, updateDoc
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAjbDVJGtIXlGK33kKWd9XKP7IVABuKlw8",
+  authDomain: "petrelief-ae0c1.firebaseapp.com",
+  projectId: "petrelief-ae0c1",
+  storageBucket: "petrelief-ae0c1.firebasestorage.app",
+  messagingSenderId: "784133878588",
+  appId: "1:784133878588:web:708b9841881ab02af2a439",
+  measurementId: "G-PW11Y5W18G"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// make global
+window.db = db;
+window.collection = collection;
+window.addDoc = addDoc;
+window.getDocs = getDocs;
+window.deleteDoc = deleteDoc;
+window.doc = doc;
+window.updateDoc = updateDoc;
+</script>
+<script  src="adoption.js"></script>
+</body>
+</html>

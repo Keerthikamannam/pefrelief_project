@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pet Mating</title>
+
+<link rel="stylesheet" href="mating.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+  <div class="overlay">
+
+    <h2>Searching for a Dating Partner for your Pet?</h2>
+    <p>Find a perfect pet match nearby</p>
+
+    <button class="main-btn" onclick="showForm()">Mating</button>
+
+  </div>
+
+</section>
+<!-- ================= MATCHMAKING JOURNEY ================= -->
+<section class="journey">
+
+  <h2>Your Pet's Matchmaking Journey With ThePetNest</h2>
+
+  <div class="journey-container">
+
+    <!-- LEFT IMAGE -->
+    <div class="journey-left">
+      <img src="mating.jpg" alt="dog">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="journey-right">
+
+      <div class="step">
+        <div class="icon">🐾</div>
+        <div>
+          <h4>Find a Mate</h4>
+          <p>Search for a dog or cat that matches your pet’s needs for mating. Just enter your city to begin.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="icon">👫</div>
+        <div>
+          <h4>Connect with Owners</h4>
+          <p>Spot the right pet? Click "show number" for the owner's contact details. Reach out to discuss meeting arrangements.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="icon">❤️</div>
+        <div>
+          <h4>Arrange Mating</h4>
+          <p>Pet owners will guide you through their specific mating processes. Choose a suitable location for both pets.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="icon">🩺</div>
+        <div>
+          <h4>Veterinary Support</h4>
+          <p>After mating, consult a vet if needed. Get expert advice to ensure your pet’s health and safety.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= FORM (HIDDEN INITIALLY) ================= -->
+<section class="form-section" id="formSection">
+
+  <h2>Find Your Pet Match 🐾</h2>
+
+  <div class="form-box">
+
+    <p class="clear">✔ Clear all filters</p>
+
+    <label>Pet type</label>
+    <select>
+      <option value="">Select Pet Type</option>
+      <option>Dog</option>
+      <option>Cat</option>
+    </select>
+
+    <label>Pet Gender</label>
+    <select>
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+
+    <label>Pet Breed</label>
+    <select>
+      <option value="">Select Breed</option>
+      <option>Labrador</option>
+      <option>Husky</option>
+      <option>Persian Cat</option>
+    </select>
+
+    <label>Search by State</label>
+    <select>
+      <option value="">Select State</option>
+      <option>Andhra Pradesh</option>
+      <option>Telangana</option>
+    </select>
+
+    <label>Search by City</label>
+    <select>
+      <option value="">Select City</option>
+      <option>Tirupati</option>
+      <option>Hyderabad</option>
+    </select>
+
+    <button class="apply-btn" onclick="applyFilter()">Apply Filter</button>
+
+  </div>
+
+</section>
+
+<!-- RESULT -->
+<div id="result" class="result"></div>
+
+<script src="mating.js"></script>
+
+</body>
+</html>

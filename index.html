@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Relief</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      overflow:hidden;
+      position:relative;
+
+      background: linear-gradient(to right, #3fa2d6, #79c2d0);
+
+      animation:bgMove 8s ease infinite alternate;
+      padding:20px;
+    }
+
+    /* Floating Shapes */
+
+    .shape{
+      position:absolute;
+      opacity:0.08;
+      z-index:0;
+      user-select:none;
+    }
+
+    .paw1{
+      top:60px;
+      left:80px;
+      font-size:80px;
+      transform:rotate(-20deg);
+    }
+
+    .paw2{
+      bottom:100px;
+      right:100px;
+      font-size:80px;
+      transform:rotate(20deg);
+    }
+
+    .heart1{
+      top:150px;
+      right:180px;
+      font-size:70px;
+    }
+
+    .bone{
+      bottom:180px;
+      right:220px;
+      font-size:80px;
+      transform:rotate(-30deg);
+    }
+
+    /* Main Container */
+
+    .container{
+      position:relative;
+      z-index:2;
+      text-align:center;
+      animation:fadeIn 1.2s ease;
+      width:100%;
+      max-width:900px;
+    }
+
+    /* Logo Circle */
+
+    .logo-wrapper{
+      width:260px;
+      height:260px;
+
+      margin:auto;
+
+      border-radius:50%;
+
+      background:rgba(255,255,255,0.12);
+
+      backdrop-filter:blur(12px);
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      border:4px solid rgba(255,255,255,0.25);
+
+      box-shadow:
+      0 10px 40px rgba(0,0,0,0.35),
+      0 0 40px rgba(0,255,255,0.25);
+
+      transition:0.5s ease;
+
+      position:relative;
+    }
+
+    /* Glowing Ring */
+
+    .logo-wrapper::before{
+      content:"";
+
+      position:absolute;
+
+      width:300px;
+      height:300px;
+
+      border-radius:50%;
+
+      border:3px solid rgba(0,255,255,0.35);
+
+      animation:rotate 12s linear infinite;
+    }
+
+    .logo-wrapper:hover{
+      transform:scale(1.04);
+    }
+
+    /* Logo */
+
+    .logo{
+      width:170px;
+      height:170px;
+
+      object-fit:contain;
+
+      border-radius:50%;
+
+      transition:0.5s ease;
+    }
+
+    .logo:hover{
+      transform:scale(1.08) rotate(4deg);
+    }
+
+    /* Sparkles */
+
+    .sparkle{
+      position:absolute;
+      color:white;
+      font-size:22px;
+      animation:blink 2s infinite alternate;
+    }
+
+    .s1{
+      top:12px;
+      right:18px;
+    }
+
+    .s2{
+      bottom:20px;
+      left:12px;
+    }
+
+    /* Title */
+
+    h1{
+      margin-top:35px;
+
+      font-size:72px;
+      font-weight:700;
+
+      color:white;
+
+      letter-spacing:2px;
+
+      text-shadow:
+      0 5px 15px rgba(0,0,0,0.35),
+      0 0 20px rgba(255,255,255,0.15);
+
+      transition:0.4s ease;
+    }
+
+    h1:hover{
+      transform:scale(1.03);
+    }
+
+    /* Subtitle */
+
+    .subtitle{
+      margin-top:12px;
+
+      color:#d9f3ff;
+
+      font-size:22px;
+
+      font-weight:300;
+
+      letter-spacing:1px;
+    }
+
+    /* Explore Button */
+
+    .explore-btn{
+      margin-top:35px;
+
+      padding:18px 45px;
+
+      border:none;
+
+      border-radius:60px;
+
+      font-size:26px;
+
+      font-weight:600;
+
+      color:white;
+
+      cursor:pointer;
+
+      background:linear-gradient(90deg,#2ec5ff,#5a6bff);
+
+      box-shadow:
+      0 10px 25px rgba(0,0,0,0.35),
+      0 0 20px rgba(0,255,255,0.25);
+
+      transition:0.4s ease;
+
+      display:inline-flex;
+      align-items:center;
+      gap:15px;
+    }
+
+    .explore-btn:hover{
+      transform:translateY(-6px) scale(1.05);
+
+      box-shadow:
+      0 15px 35px rgba(0,0,0,0.45),
+      0 0 35px rgba(0,255,255,0.45);
+    }
+
+    .explore-btn span{
+      font-size:32px;
+      transition:0.4s;
+    }
+
+    .explore-btn:hover span{
+      transform:translateX(8px);
+    }
+
+    /* Animations */
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @keyframes rotate{
+      from{
+        transform:rotate(0deg);
+      }
+      to{
+        transform:rotate(360deg);
+      }
+    }
+
+    @keyframes blink{
+      from{
+        opacity:0.4;
+      }
+      to{
+        opacity:1;
+      }
+    }
+
+    @keyframes bgMove{
+      0%{
+        background-position:left top;
+      }
+
+      100%{
+        background-position:right bottom;
+      }
+    }
+
+    /* Tablet */
+
+    @media(max-width:768px){
+
+      .logo-wrapper{
+        width:220px;
+        height:220px;
+      }
+
+      .logo-wrapper::before{
+        width:250px;
+        height:250px;
+      }
+
+      .logo{
+        width:140px;
+        height:140px;
+      }
+
+      h1{
+        font-size:54px;
+      }
+
+      .subtitle{
+        font-size:18px;
+      }
+
+      .explore-btn{
+        font-size:22px;
+        padding:15px 35px;
+      }
+
+      .paw1,
+      .paw2,
+      .heart1,
+      .bone{
+        font-size:55px;
+      }
+    }
+
+    /* Mobile */
+
+    @media(max-width:480px){
+
+      .logo-wrapper{
+        width:180px;
+        height:180px;
+      }
+
+      .logo-wrapper::before{
+        width:210px;
+        height:210px;
+      }
+
+      .logo{
+        width:110px;
+        height:110px;
+      }
+
+      h1{
+        font-size:42px;
+      }
+
+      .subtitle{
+        font-size:16px;
+      }
+
+      .explore-btn{
+        font-size:18px;
+        padding:14px 28px;
+        gap:10px;
+      }
+
+      .explore-btn span{
+        font-size:24px;
+      }
+
+      .paw1,
+      .paw2,
+      .heart1,
+      .bone{
+        display:none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Decorative Shapes -->
+
+  <div class="shape paw1">🐾</div>
+  <div class="shape paw2">🐾</div>
+  <div class="shape heart1">♡</div>
+  <div class="shape bone">🦴</div>
+
+  <!-- Main Content -->
+
+  <div class="container">
+
+    <div class="logo-wrapper">
+
+      <div class="sparkle s1">✦</div>
+      <div class="sparkle s2">✦</div>
+
+      <!-- YOUR LOGO -->
+      <img src="logo.png" class="logo" alt="Pet Relief Logo">
+
+    </div>
+
+    <h1>Pet Relief</h1>
+
+    <p class="subtitle">
+      Care today, relief always.
+    </p>
+
+    <button class="explore-btn" onclick="goToHome()">
+      🐾 Explore <span>→</span>
+    </button>
+
+  </div>
+
+  <script>
+
+    function goToHome(){
+      window.location.href = "home.html";
+    }
+
+  </script>
+
+</body>
+</html>

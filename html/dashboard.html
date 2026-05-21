@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PetRelief Dashboard</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" >
+<link rel="stylesheet" href="dashboard.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<h1>Welcome to PetRelief 🐾</h1>
+
+<div class="container">
+
+    <div class="card" onclick="location.href='adoption.html'">
+        <i class="fa-solid fa-paw"></i>
+        <h3>Adoption</h3>
+    </div>
+
+    <div class="card" onclick="location.href='services.html'">
+        <i class="fa-solid fa-house"></i>
+        <h3>Petcare Services</h3>
+    </div>
+
+    <div class="card" onclick="location.href='donation.html'">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Donate</h3>
+    </div>
+
+    <div class="card" onclick="location.href='volunteer.html'">
+        <i class="fa-solid fa-hand-holding-heart"></i>
+        <h3>Volunteer</h3>
+    </div>
+
+</div>
+
+<button class="logout" onclick="logout()">Logout</button>
+<script src="dashboard.js"></script>
+
+</body>
+</html>

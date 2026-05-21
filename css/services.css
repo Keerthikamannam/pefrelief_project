@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* MAIN BACKGROUND */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #5fa8d3, #7ec8e3);
+
+    min-height: 100vh;
+    position: relative;
+}
+
+/* PAW PATTERN LAYER */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("paw.jpg"); /* your image */
+    background-size: 220px;           /* spacing */
+    background-repeat: repeat;
+
+    opacity: 0.15;                   /* control visibility */
+    z-index: 0;
+}
+
+/* KEEP CONTENT ABOVE BACKGROUND */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: #1c79c0;
+
+    text-shadow: 
+        0 0 10px rgba(147, 148, 149, 0.83),
+        0 0 20px rgba(223, 228, 232, 0.955);
+}
+
+/* GRID */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 85%;
+    margin: auto;
+}
+
+/* CARD */
+.service-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* ICON */
+.icon {
+    font-size: 40px;
+    color: #1c79c0;   
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* LINK */
+.service-card a {
+    color:#1c79c0 ;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* HOVER */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}

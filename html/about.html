@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - PetRelief</title>
+<link rel="stylesheet" href="about.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+    <h2 class="logo">PetRelief</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<section class="about-hero">
+    <h1>About PetRelief 🐾</h1>
+    <p>
+        A platform dedicated to connecting loving homes with pets in need — 
+        because every animal deserves a second chance at life.
+    </p>
+</section>
+<section class="about-section">
+    <h2>Our Mission</h2>
+    <p>
+        At PetRelief, our mission is to reduce pet homelessness and promote ethical adoption. 
+        Every year, thousands of animals are abandoned or left without proper care. 
+        We aim to bridge the gap between these pets and compassionate individuals 
+        who are ready to give them a safe and loving home.
+    </p>
+
+    <p>
+        We believe adoption is not just about finding a pet — it’s about building 
+        a lifelong bond, saving lives, and creating happiness for both pets and humans.
+    </p>
+</section>
+<section class="about-section">
+    <h2>Our Vision</h2>
+    <p>
+        Our vision is to create a world where no pet is left homeless or uncared for. 
+        We aspire to become a trusted platform that encourages responsible pet ownership 
+        and spreads awareness about animal welfare across communities.
+    </p>
+</section>
+<section class="stats">
+    <div class="stat-box">
+        <h2 class="counter" data-target="500">0</h2>
+        <p>Pets Successfully Adopted</p>
+    </div>
+    <div class="stat-box">
+        <h2 class="counter" data-target="120">0</h2>
+        <p>Partner Shelters & Rescues</p>
+    </div>
+    <div class="stat-box">
+        <h2 class="counter" data-target="1000">0</h2>
+        <p>Happy Families Created</p>
+    </div>
+</section>
+<section class="about-section cards">
+    <h2>What We Do</h2>
+
+    <p>
+        PetRelief simplifies the adoption process by offering a user-friendly platform 
+        where users can discover, connect, and adopt pets with ease.
+    </p>
+
+    <div class="card-container">
+        <div class="card">
+            <i class="fa fa-search"></i>
+            <h3>Search Pets</h3>
+            <p>Browse pets by type, breed, and location to find your perfect companion.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa fa-comments"></i>
+            <h3>Connect</h3>
+            <p>Communicate directly with pet owners or shelters for complete information.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa fa-heart"></i>
+            <h3>Adopt</h3>
+            <p>Provide a loving home and begin a lifelong journey with your new pet.</p>
+        </div>
+    </div>
+</section>
+<section class="about-section">
+    <h2>Why Adopt Instead of Buy?</h2>
+    <p>
+        Adoption helps reduce overpopulation in shelters and gives abandoned animals 
+        a second chance at life. Unlike buying, adoption is a humane and ethical choice 
+        that directly contributes to animal welfare.
+    </p>
+
+    <p>
+        When you adopt, you’re not just getting a pet — you’re saving a life and 
+        making space for another animal in need.
+    </p>
+</section>
+<section class="facts">
+    <h2>Did You Know?</h2>
+    <p id="factText">
+        Millions of pets are waiting for homes worldwide. Be the reason one finds a family ❤️
+    </p>
+    <button onclick="newFact()">Show Another Fact</button>
+</section>
+<section class="cta">
+    <h2>Give a Pet a Second Chance 🐶</h2>
+    <p>
+        Start your adoption journey today and make a difference in a pet’s life.
+    </p>
+    <button onclick="location.href='contact.html'">wanna know more?</button>
+</section>
+<section class="cta-redirect">
+    <h2>Wanna Experience our services? </h2>
+    <p>Create your account and unlock pet services instantly.</p>
+
+    <button onclick="goToGetStarted()">
+        Get Started
+    </button>
+</section>
+<script src="about.js"></script>
+</body>
+</html>

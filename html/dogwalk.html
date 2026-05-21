@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dog Walking</title>
+<link rel="stylesheet" href="dogwalk.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay">
+    <h1>The Ultimate Guide to Dog Walking Services</h1>
+    <p>Personalized care for your dog</p>
+
+    <div class="form-box">
+
+      <div class="row">
+        <input type="text" placeholder="Search Your Locality...">
+        <input type="date">
+      </div>
+
+      <p>Days</p>
+
+      <div class="days">
+        <button onclick="selectDays(this)">7 Days</button>
+        <button onclick="selectDays(this)">15 Days</button>
+        <button onclick="selectDays(this)">30 Days</button>
+      </div>
+
+      <button class="book-btn" onclick="bookWalk()">Book a Dog Walk</button>
+      
+    </div>
+    
+  </div>
+</section>
+<div id="result" class="result"></div>
+
+<!-- HOW IT WORKS -->
+<section class="steps">
+  <h2>How to book a dog walk</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">📅</div>
+      <h3>Find Your Match</h3>
+      <p>Browse walkers and find the perfect match.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📍</div>
+      <h3>Schedule a session</h3>
+      <p>Select date, time and confirm booking.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🐕</div>
+      <h3>Follow all</h3>
+      <p>Track updates and enjoy peace of mind.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="why">
+
+  <h2>Why choose us?</h2>
+
+  <div class="features">
+
+    <div class="feature">
+      <h4>💳 Cashless payments</h4>
+      <p>Secure and easy payments.</p>
+    </div>
+
+    <div class="feature">
+      <h4>🛡 Guarantee</h4>
+      <p>Safety is our priority.</p>
+    </div>
+
+    <div class="feature">
+      <h4>📦 Booking Protection</h4>
+      <p>Reliable and safe booking.</p>
+    </div>
+
+    <div class="feature">
+      <h4>📞 24x7 Support</h4>
+      <p>Always available for help.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="dogwalk.js"></script>
+</body>
+</html>

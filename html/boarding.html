@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PetRelief Portal</title>
+
+<link rel="stylesheet" href="boarding.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Ultimate Guide To Pet Boarding Services</h1>
+  <p>Your Pet's Home Away from Home</p>
+</div>
+
+<div class="form-box">
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab(event,'overnight')">Overnight</button>
+    <button class="tab" onclick="switchTab(event,'daycare')">Daycare</button>
+  </div>
+
+  <!-- SERVICES (CHECKBOX STYLE) -->
+  <div class="services">
+    <label class="service">
+      <input type="checkbox" value="Pet Boarding">
+      <span>Pet Boarding</span>
+    </label>
+
+    <label class="service">
+      <input type="checkbox" value="Pet Hosting">
+      <span>Pet Hosting</span>
+    </label>
+
+    <label class="service">
+      <input type="checkbox" value="Pet Sitting">
+      <span>Pet Sitting</span>
+    </label>
+  </div>
+
+  <!-- ================= OVERNIGHT FORM ================= -->
+  <div id="overnightForm" class="form-section">
+
+    <input type="text" id="location" placeholder="Enter Location">
+
+    <div class="row">
+      <input type="date" id="checkin">
+      <input type="date" id="checkout">
+    </div>
+
+    <div class="row">
+      <select id="checkintime">
+        <option>Check-In Time</option>
+        <option>Morning</option>
+        <option>Afternoon</option>
+      </select>
+
+      <select id="checkouttime">
+        <option>Check-Out Time</option>
+        <option>Evening</option>
+        <option>Night</option>
+      </select>
+    </div>
+
+  </div>
+
+  <!-- ================= DAYCARE FORM ================= -->
+  <div id="daycareForm" class="form-section" style="display:none;">
+
+    <input type="text" placeholder="Enter Location">
+
+    <p style="margin-top:10px;">How often do you need Daycare?</p>
+
+    <div class="row">
+      <button type="button" class="option-btn active">Single Day</button>
+      <button type="button" class="option-btn">More than one day</button>
+    </div>
+
+    <div class="row">
+      <input type="date">
+      <input type="date">
+    </div>
+
+  </div>
+
+  <!-- ================= PET COUNTERS ================= -->
+  <div class="row">
+    <div>
+      <p>Dogs</p>
+      <div class="counter">
+        <button onclick="changeCount('dogs', -1)">-</button>
+        <span id="dogs">0</span>
+        <button onclick="changeCount('dogs', 1)">+</button>
+      </div>
+    </div>
+
+    <div>
+      <p>Cats</p>
+      <div class="counter">
+        <button onclick="changeCount('cats', -1)">-</button>
+        <span id="cats">0</span>
+        <button onclick="changeCount('cats', 1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH -->
+  <button class="search-btn" onclick="submitForm()">Search</button>
+
+  <!-- RESULT -->
+  <div class="result" id="result"></div>
+
+</div>
+<!-- ================= SERVICES CARDS ================= -->
+<section class="features">
+
+  <h2>Comprehensive Care for every Dog and Cat</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">🏠</div>
+      <h3>Pet Boarding</h3>
+      <p>Providing exceptional care for your pets at our facility with modern amenities.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👜</div>
+      <h3>Pet Hosting</h3>
+      <p>Your pets enjoy a delightful stay in a warm and inviting home environment.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🐕</div>
+      <h3>Pet Sitting</h3>
+      <p>Dedicated care for your pets at your home with full attention and comfort.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= INFO SECTION ================= -->
+<section class="info">
+
+  <div class="info-left">
+    <h2>Book top-notch pet care anytime, anywhere</h2>
+
+    <ul>
+      <li>✔ All pet boarders and sitters undergo screening & background check</li>
+      <li>✔ Every pet boarder provides full profile and personal details</li>
+      <li>✔ All sitters are verified by professionals</li>
+    </ul>
+
+    
+  </div>
+
+  <div class="info-right">
+    <img src="boarding.png" alt="pets">
+  </div>
+
+</section>
+
+<script src="boarding.js"></script>
+
+</body>
+</html>

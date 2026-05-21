@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Articles</title>
+<link rel="stylesheet" href="resources.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">PetRelief</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Pet Articles</h1>
+    <p>Enhance Your Understanding and <br> Strengthen the Bond</p>
+  </div>
+  <div class="hero-image">
+    <img src="resources.jpg" alt="Pet Learning">
+  </div>
+  <button class="explore-btn" onclick="goToBlogs()">Explore Blogs</button>
+</section>
+<section class="resources" id="blogs">
+  <h2 class="section-title">CHECKOUT OUR BLOGS</h2>
+    <div class="blogs-container">
+      <div class="featured-blog">
+
+         <div class="featured-content">
+         <h2>🐾 Featured Article</h2>
+         <h1>How to Take Care of Your Pet Daily</h1>
+         <p>
+  Caring for your pet goes beyond just providing food and shelter. It involves 
+  understanding their daily needs, including proper nutrition, regular exercise, 
+  and maintaining hygiene through grooming. Spending quality time with your pet 
+  strengthens emotional bonding and builds trust. By following healthy habits 
+  and giving consistent attention, you can ensure your pet lives a happy, active, 
+  and healthy life.
+        </p>
+       </div>
+
+       <div class="featured-image">
+          <img src="r.jpg" alt="Featured Pet">
+       </div>
+
+       </div>
+      <!-- 1 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r1.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Provide Fresh Water Daily</h3>
+          <p class="blog-text">
+           Water is essential for your pet’s overall health and well-being. Always ensure 
+           fresh, clean water is available throughout the day, especially during hot weather. 
+           Dehydration can lead to serious health problems like fatigue and organ issues. 
+           Make it a habit to clean water bowls regularly and refill them often. 
+           Providing constant access to water keeps your pet active, healthy, and hydrated.
+          </p>
+          <button class="read-more-btn" onclick="toggleContent(this)">
+          Read More
+          </button>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r2.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Regular Vet Checkups</h3>
+          <p class="blog-text">
+          Scheduling regular veterinary visits helps in early detection of diseases and 
+          ensures your pet stays healthy. Routine checkups allow timely vaccinations and 
+          preventive treatments that protect your pet from serious illnesses. Professional 
+          advice from vets helps you understand your pet’s specific needs better. 
+          Regular visits also improve your pet’s lifespan and overall quality of life.
+         </p>
+        <button class="read-more-btn" onclick="toggleContent(this)">
+        Read More
+        </button>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r3.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Daily Exercise is Essential</h3>
+          <p class="blog-text">
+          Physical activity keeps your pet fit, active, and mentally stimulated. Regular 
+          exercise helps prevent obesity and related health issues like joint pain. 
+          Activities like walking, playing, and running improve mood and reduce stress. 
+          Exercise also strengthens the bond between you and your pet. 
+          A well-exercised pet is happier, healthier, and more disciplined.
+          </p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r4.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Balanced Diet Matters</h3>
+           <p class="blog-text">
+            Providing a balanced and nutritious diet is crucial for your pet’s growth and 
+            health. Choose food suitable for their breed, age, and health condition. Avoid 
+            feeding harmful human foods that may cause digestive issues. A proper diet 
+            supports immunity, energy levels, and coat health. 
+            Healthy eating habits ensure your pet lives a long and active life.
+          </p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r5.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Grooming Keeps Pets Healthy</h3>
+          <p class="blog-text">
+  Regular grooming keeps your pet clean and comfortable while preventing skin 
+  infections. Brushing removes loose hair and improves blood circulation. 
+  Bathing helps maintain hygiene and reduces odor. Nail trimming and ear cleaning 
+  are also important for overall health. 
+  Grooming sessions also help you detect early signs of health problems.
+           </p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r6.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Provide Mental Stimulation</h3>
+          <p class="blog-text">
+  Mental stimulation is just as important as physical exercise for your pet. 
+  Interactive toys, puzzles, and training sessions keep their minds active. 
+  It helps prevent boredom, anxiety, and destructive behavior. 
+  Learning new tricks improves intelligence and responsiveness. 
+  A mentally engaged pet is happier and more well-behaved.
+          </p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r7.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Maintain Clean Living Space</h3>
+          <p class="blog-text">
+  A clean environment helps prevent infections and keeps your pet comfortable. 
+  Regularly clean bedding, feeding areas, and litter boxes to maintain hygiene. 
+  Dirty surroundings can lead to parasites and health issues. 
+  A well-maintained space reduces stress and improves your pet’s mood. 
+  Clean surroundings ensure a safe and healthy lifestyle for your pet.
+          </p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r8.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Train Your Pet Early</h3>
+          <p class="blog-text">
+  Early training helps your pet develop good habits and proper behavior. 
+  Teaching basic commands improves communication and control. 
+  Consistent training builds discipline and confidence in pets. 
+  It also reduces unwanted behaviors like barking or aggression. 
+  A well-trained pet is easier to manage and more enjoyable to be around.
+          </p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r9.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Ensure Proper Vaccination</h3>
+          <p class="blog-text">
+  Vaccinations protect your pet from dangerous diseases and infections. 
+  Following a proper vaccination schedule is essential for long-term health. 
+  It helps build immunity and prevents the spread of illnesses. 
+  Consult your veterinarian to ensure timely vaccinations. 
+  Proper vaccination keeps your pet safe and reduces medical risks.
+          </p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="blog-card ">
+        <div class="image-wrapper">
+          <img src="r10.jpg">
+        </div>
+        <div class="blog-content">
+          <h3>Tip: Give Love and Attention</h3>
+           <p class="blog-text">
+  Vaccinations protect your pet from dangerous diseases and infections. 
+  Following a proper vaccination schedule is essential for long-term health. 
+  It helps build immunity and prevents the spread of illnesses. 
+  Consult your veterinarian to ensure timely vaccinations. 
+  Proper vaccination keeps your pet safe and reduces medical risks.
+          </p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+        </div>
+      </div>
+</section>
+<section class="cta-redirect">
+    <h2>Wanna Experience our services? </h2>
+    <p>Create your account and unlock pet services instantly.</p>
+
+    <button onclick="goToGetStarted()">
+        Get Started
+    </button>
+</section>
+<script src="resources.js"></script>
+</body>
+
+</html>

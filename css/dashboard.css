@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #5fa8d3, #7ec8e3);
+    text-align: center;
+    position: relative;
+    min-height: 100vh; 
+}
+/* Paw pattern */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: url("paw.jpg");
+    background-size: 200px;
+
+    opacity: 0.1;
+    z-index: 0;
+}
+
+/* Keep content above */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* TITLE */
+h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-weight: 700;
+
+    color: white;
+
+    /* Glow effect */
+    text-shadow: 
+        0 0 10px rgba(123, 122, 122, 0.8),
+        0 0 20px rgba(123,122,122,0.8);
+
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+/* CARD */
+.card {
+    width: 220px;
+    height: 180px;
+
+    background: #ffffff;   
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.4s;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ICON */
+.card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.card h3 {
+    margin: 0;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: #ffffff;   /* keep white */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* LOGOUT BUTTON */
+.logout {
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    color: #1c79c0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout:hover {
+    transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.95);
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}

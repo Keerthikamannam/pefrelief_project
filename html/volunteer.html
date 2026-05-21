@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Volunteer</title>
+
+<link rel="stylesheet" href="volunteer.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- ================= HEADER ================= -->
+<section class="header">
+  <h1>VOLUNTEER WITH PETRELIEF</h1>
+  <p>
+    Volunteering at Petrelief is a rewarding way to make a difference in the lives of animals.
+    Whether you're passionate about animal welfare, community outreach, or simply want to help,
+    we have opportunities for everyone.
+  </p>
+</section>
+
+<!-- ================= OPPORTUNITIES ================= -->
+<section class="opportunities">
+
+  <h2>Volunteer Opportunities</h2>
+
+  <div class="grid">
+
+    <div class="card"><b>Animal Care :</b> Assist with feeding, grooming, and caring for animals.</div>
+    <div class="card"><b>Adoption Events :</b> Help organize adoption drives.</div>
+    <div class="card"><b>Fundraising :</b> Support fundraising campaigns and events.</div>
+    <div class="card"><b>Community Outreach :</b> Educate public about animal welfare.</div>
+    <div class="card"><b>Administrative Support :</b> Assist with office tasks.</div>
+    <div class="card"><b>Veterinary Assistance :</b> Help with basic animal care.</div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= WHY VOLUNTEER ================= -->
+<section class="why">
+
+  <h2>WHY VOLUNTEER?</h2>
+
+  <div class="why-content">
+
+    <div class="big-icon">?</div>
+
+    <div class="text">
+      <p>Make a direct impact on the lives of animals in need.</p>
+      <p>Join a community of passionate individuals.</p>
+      <p>Gain valuable skills in animal care and event management.</p>
+      <p>Be part of a legacy of compassion and care.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FORM ================= -->
+<section class="form-section">
+
+  <h2>Volunteer Application</h2>
+  <p class="sub">Ready to join our team? Fill out the form below.</p>
+
+  <form id="volunteerForm">
+
+    <input type="text" placeholder="First Name" required>
+    <input type="text" placeholder="Last Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+
+    <!-- DROPDOWN -->
+    <select required>
+      <option value="">Area of Interest</option>
+      <option>Animal Care</option>
+      <option>Adoption Events</option>
+      <option>Fundraising</option>
+      <option>Community Outreach</option>
+      <option>Administrative Support</option>
+      <option>Veterinary Assistance</option>
+    </select>
+
+    <textarea placeholder="Availability (e.g. weekends, evenings)"></textarea>
+
+    <textarea placeholder="Why do you want to volunteer?"></textarea>
+
+    <button type="submit">Submit Application</button>
+
+  </form>
+
+  <!-- RESULT -->
+  <div id="result" class="result"></div>
+
+</section>
+
+<script src="volunteer.js"></script>
+
+</body>
+</html>

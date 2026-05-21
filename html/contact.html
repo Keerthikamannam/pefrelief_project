@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - PetRelief</title>
+
+<link rel="stylesheet" href="contact.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2 class="logo">PetRelief</h2>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="contact-hero">
+    <h1>Contact Us 📩</h1>
+    <p>We’re here to support your adoption journey.</p>
+</section>
+
+<!-- CONTACT INFO -->
+<section class="contact-info">
+
+    <!-- EMAIL -->
+    <a href="mailto:Petrelief.in@gmail.com" class="info-box">
+        <i class="fa fa-envelope"></i>
+        <h3>Email</h3>
+        <p>Petrelief.in@gmail.com</p>
+    </a>
+
+    <!-- PHONE -->
+    <a href="tel:+919876543210" class="info-box">
+        <i class="fa fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+91 98765 43210</p>
+    </a>
+
+    <!-- LOCATION -->
+    <a href="https://www.google.com/maps?q=Hyderabad" target="_blank" class="info-box">
+       <i class="fa fa-map-marker-alt"></i>
+       <h3>Location</h3>
+       <p>Hyderabad, India</p>
+    </a>
+
+</section>
+<!-- FOLLOW US -->
+<section class="follow-us">
+
+    <h2>Follow Us</h2>
+    <p>Stay connected with us on social media 🐾</p>
+
+    <div class="social-icons">
+
+        <a href="https://www.instagram.com/petsrelief?igsh=emppY3o3aWttZzE4&utm_source=qr" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/share/1E4FSCdL3Q/?mibextid=wwXIfr" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- MAIN -->
+<section class="contact-container">
+
+    <!-- MAP -->
+    <div class="map-box">
+        <iframe src="https://www.google.com/maps?q=Hyderabad&output=embed"></iframe>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-box">
+        <h2>Send Message</h2>
+
+        <form id="contactForm">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <!-- NEW DROPDOWN -->
+            <select id="reason" required>
+                <option value="">Select Reason</option>
+                <option>Adoption Inquiry</option>
+                <option>Report Issue</option>
+                <option>General Question</option>
+            </select>
+
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <p id="successMsg"></p>
+        </form>
+    </div>
+
+</section>
+
+<!-- WORKING HOURS -->
+<section class="working-hours">
+    <h2>Working Hours</h2>
+    <p>Monday - Friday: 9:00 AM – 6:00 PM</p>
+    <p>Saturday: 10:00 AM – 4:00 PM</p>
+    <p>Sunday: Closed</p>
+</section>
+
+<!-- QUICK CONTACT -->
+<section class="quick-contact">
+    <h2>Quick Contact</h2>
+
+    <button onclick="window.location.href='mailto:Petrelief.in@gmail.com'">
+        📧 Email Us
+    </button>
+
+    <a href="tel:+919876543210" class="call-btn">
+    📞 Call Us
+    </a>
+</section>
+<!-- CONTRIBUTORS SECTION -->
+
+<section class="contributors-section">
+
+    <h2 class="contributors-title">Contributors</h2>
+
+    <div class="contributors-container">
+
+        <div class="contributor-card">
+            <img src="user1.jpg" alt="Contributor">
+            <h3>Chamarthi Nithish</h3>
+            <p>AM.SC.U4AID24008</p>
+            <a href="https://nani12-nithish.github.io/portfolio/" target="_blank">
+                View Portfolio
+            </a>
+        </div>
+
+        <div class="contributor-card">
+            <img src="user2.jpg" alt="Contributor">
+            <h3>Kondeti Sahasra</h3>
+            <p>AM.SC.U4AID24022</p>
+            <a href="https://sahasra033.github.io/Portfolio---UID/" target="_blank">
+                View Portfolio
+            </a>
+        </div>
+
+        <div class="contributor-card">
+            <img src="user3.jpg" alt="Contributor">
+            <h3>Vemula Dhimirnath</h3>
+            <p>AM.SC.U4AID24050</p>
+
+            <a href="https://dhimirnath.github.io/portfolio/" target="_blank">
+                View Portfolio
+            </a>
+        </div>
+
+        <div class="contributor-card">
+            <img src="user4.jpg" alt="Contributor">
+            <h3>Mannam Keerthika</h3>
+            <p>AM.SC.U4AID24062</p>
+            <a href="https://keerthikamannam.github.io/portfolio/" target="_blank">
+                View Portfolio
+            </a>
+        </div>
+
+    </div>
+
+</section>
+<!-- HELP NOTE -->
+<section class="help-note">
+    <p>
+        We usually respond within 24 hours. For urgent adoption requests,
+        please contact us directly via email or phone.
+    </p>
+</section>
+<section class="cta-redirect">
+    <h2>Wanna Experience our services? </h2>
+    <p>Create your account and unlock pet services instantly.</p>
+
+    <button onclick="goToGetStarted()">
+        Get Started
+    </button>
+</section>
+<footer class="footer">
+    <p>© 2025 PetRelief | Made with ❤️</p>
+</footer>
+
+<script src="contact.js" defer></script>
+
+</body>
+</html>

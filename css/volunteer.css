@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f8ff;
+  color: #222;
+}
+
+/* ================= HEADER ================= */
+.header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #3fa2d6, #79c2d0);
+  color: white;
+  border-radius: 0 0 30px 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #00060a;
+}
+
+.header p {
+  max-width: 800px;
+  margin: 15px auto;
+  color: #555;
+}
+
+
+/* ================= OPPORTUNITIES ================= */
+.opportunities {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.opportunities h2 {
+  margin-bottom: 30px;
+  color: #3fa2d6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #4da6ff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #1c79c0;
+}
+
+
+/* ================= WHY ================= */
+.why {
+  background: linear-gradient(to right, #3fa2d6, #79c2d0);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.why-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.big-icon {
+  font-size: 80px;
+  opacity: 0.7;
+}
+
+.text p {
+  margin: 10px 0;
+}
+
+
+/* ================= FORM ================= */
+.form-section {
+  background: #eaf3ff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.form-section h2 {
+  color: #3fa2d6;
+}
+
+.sub {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+form {
+  width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* INPUTS */
+input, select, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbdaf5;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1c79c0;
+  box-shadow: 0 0 5px rgba(28,121,192,0.3);
+}
+
+textarea {
+  height: 90px;
+}
+
+/* BUTTON */
+button {
+  background: #3fa2d6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5793c7;
+}
+
+
+/* ================= RESULT ================= */
+.result {
+  margin-top: 20px;
+  display: none;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  .why-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  form {
+    width: 90%;
+  }
+}

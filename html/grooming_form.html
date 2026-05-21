@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Grooming</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="grooming_form.css">
+
+</head>
+
+<body>
+
+<h1>Add Pet Details 🐾</h1>
+
+<div class="form-container">
+
+    <!-- PET TYPE -->
+    <label>What type of pet?</label>
+
+    <div class="pet-type">
+
+    <input type="radio" id="cat" name="petType" value="Cat" hidden>
+    <label for="cat" class="box">
+        🐱
+        <p>Cat</p>
+    </label>
+
+    <input type="radio" id="dog" name="petType" value="Dog" hidden>
+    <label for="dog" class="box">
+        🐶
+        <p>Dog</p>
+    </label>
+
+    </div>
+
+    <!-- NAME -->
+    <label>Name of your pet?</label>
+    <input type="text" id="petName" placeholder="Enter pet name">
+
+    <!-- BREED -->
+    <label>Breed of your pet?</label>
+    <input type="text" id="breed" placeholder="Enter breed">
+
+    <!-- GENDER -->
+    <label>Gender of your pet?</label>
+
+    <div class="gender">
+
+    <input type="radio" id="female" name="gender" value="Female" hidden>
+    <label for="female" class="gender-box">Female</label>
+
+    <input type="radio" id="male" name="gender" value="Male" hidden>
+    <label for="male" class="gender-box">Male</label>
+
+    </div>
+
+    <!-- WEIGHT + AGE -->
+    <div class="row">
+        <div>
+            <label>Weight (Kg)</label>
+            <input type="number" id="weight" placeholder="Enter weight">
+        </div>
+
+        <div>
+            <label>Age</label>
+            <input type="number" id="age" placeholder="Enter age">
+        </div>
+    </div>
+
+    <!-- DATE -->
+    <label>Select Date</label>
+    <input type="date" id="date">
+
+    <!-- TIME -->
+    <label>Select Time</label>
+    <input type="time" id="time">
+
+    <!-- SUBMIT -->
+    <button class="submit" onclick="bookService()">Book Now</button>
+
+</div>
+
+<script src="grooming_form.js"></script>
+
+</body>
+</html>

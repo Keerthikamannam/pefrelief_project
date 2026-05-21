@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('train.jpg') no-repeat center/cover;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+}
+
+.overlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  margin-bottom: 20px;
+}
+
+/* FORM BOX */
+.form-box {
+  width: 70%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #000;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #2a73ab;
+  color: #fff;
+}
+
+/* TRAINING TYPES */
+.training-types {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.training-types label {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* INPUTS */
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.book-btn {
+  display: block;
+  margin: 20px auto 0;   /* centers button */
+  padding: 10px 25px;
+  width: auto;           /* remove full width */
+  min-width: 200px;
+  background: #2f6f9f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #245a80;
+}
+.result {
+  width: 70%;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.result h3 {
+  color: #2f6f9f;
+  margin-bottom: 15px;
+}
+
+.result p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+/* ================= INFO SECTION ================= */
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 10%;
+  background: #ffffff;
+}
+
+/* LEFT SIDE */
+.left {
+  width: 55%;
+}
+
+.left h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.left p {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* FEATURE ITEMS */
+.feature {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  background: #fff3ea;
+  transform: translateX(5px);
+}
+
+.feature h4 {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* RIGHT GUARANTEE BOX */
+.right {
+  width: 40%;
+}
+
+.guarantee-box {
+  border: 2px solid #1c79c0;
+  padding: 25px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.guarantee-box h3 {
+  color: #1c79c0;
+  margin-bottom: 20px;
+}
+
+.g-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.g-item h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.g-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ================= FINAL SECTION ================= */
+.final {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background: #f7f7f7;
+  gap: 40px;
+}
+
+/* LEFT TEXT */
+.final-left {
+  width: 50%;
+}
+
+.final-left h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.final-left p {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.final-left h3 {
+  margin-top: 15px;
+  color: #1c79c0;
+}
+
+.final-left ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.final-left li {
+  margin-bottom: 8px;
+}
+
+/* IMAGE */
+.final-right {
+  width: 45%;
+}
+
+.final-right img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.final-right img:hover {
+  transform: scale(1.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .info,
+  .final {
+    flex-direction: column;
+  }
+
+  .left,
+  .right,
+  .final-left,
+  .final-right {
+    width: 100%;
+  }
+}
