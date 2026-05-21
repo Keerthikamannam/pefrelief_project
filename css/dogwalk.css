@@ -12,7 +12,7 @@ body {
 /* HERO */
 .hero {
   height: 90vh;
-  background: url('dogwalk.jpg') no-repeat center/cover;
+  background: url('../images/dogwalk.jpg') no-repeat center/cover;
   position: relative;
 }
 
