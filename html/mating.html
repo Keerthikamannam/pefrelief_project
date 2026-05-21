@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <title>Pet Mating</title>
 
-<link rel="stylesheet" href="mating.css">
+<link rel="stylesheet" href="../css/mating.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 </head>
@@ -17,13 +21,17 @@
   <div class="overlay">
 
     <h2>Searching for a Dating Partner for your Pet?</h2>
+
     <p>Find a perfect pet match nearby</p>
 
-    <button class="main-btn" onclick="showForm()">Mating</button>
+    <button class="main-btn" onclick="showForm()">
+      Mating
+    </button>
 
   </div>
 
 </section>
+
 <!-- ================= MATCHMAKING JOURNEY ================= -->
 <section class="journey">
 
@@ -33,42 +41,68 @@
 
     <!-- LEFT IMAGE -->
     <div class="journey-left">
-      <img src="mating.jpg" alt="dog">
+
+      <img src="../images/mating.jpg" alt="dog">
+
     </div>
 
     <!-- RIGHT CONTENT -->
     <div class="journey-right">
 
       <div class="step">
+
         <div class="icon">🐾</div>
+
         <div>
           <h4>Find a Mate</h4>
-          <p>Search for a dog or cat that matches your pet’s needs for mating. Just enter your city to begin.</p>
+
+          <p>
+            Search for a dog or cat that matches your pet’s needs for mating.
+          </p>
         </div>
+
       </div>
 
       <div class="step">
+
         <div class="icon">👫</div>
+
         <div>
           <h4>Connect with Owners</h4>
-          <p>Spot the right pet? Click "show number" for the owner's contact details. Reach out to discuss meeting arrangements.</p>
+
+          <p>
+            Reach out to discuss meeting arrangements.
+          </p>
         </div>
+
       </div>
 
       <div class="step">
+
         <div class="icon">❤️</div>
+
         <div>
           <h4>Arrange Mating</h4>
-          <p>Pet owners will guide you through their specific mating processes. Choose a suitable location for both pets.</p>
+
+          <p>
+            Choose a suitable location for both pets.
+          </p>
         </div>
+
       </div>
 
       <div class="step">
+
         <div class="icon">🩺</div>
+
         <div>
           <h4>Veterinary Support</h4>
-          <p>After mating, consult a vet if needed. Get expert advice to ensure your pet’s health and safety.</p>
+
+          <p>
+            Get expert advice for your pet’s safety.
+          </p>
         </div>
+
       </div>
 
     </div>
@@ -77,7 +111,7 @@
 
 </section>
 
-<!-- ================= FORM (HIDDEN INITIALLY) ================= -->
+<!-- ================= FORM ================= -->
 <section class="form-section" id="formSection">
 
   <h2>Find Your Pet Match 🐾</h2>
@@ -87,6 +121,7 @@
     <p class="clear">✔ Clear all filters</p>
 
     <label>Pet type</label>
+
     <select>
       <option value="">Select Pet Type</option>
       <option>Dog</option>
@@ -94,6 +129,7 @@
     </select>
 
     <label>Pet Gender</label>
+
     <select>
       <option value="">Select Gender</option>
       <option>Male</option>
@@ -101,6 +137,7 @@
     </select>
 
     <label>Pet Breed</label>
+
     <select>
       <option value="">Select Breed</option>
       <option>Labrador</option>
@@ -109,6 +146,7 @@
     </select>
 
     <label>Search by State</label>
+
     <select>
       <option value="">Select State</option>
       <option>Andhra Pradesh</option>
@@ -116,13 +154,16 @@
     </select>
 
     <label>Search by City</label>
+
     <select>
       <option value="">Select City</option>
       <option>Tirupati</option>
       <option>Hyderabad</option>
     </select>
 
-    <button class="apply-btn" onclick="applyFilter()">Apply Filter</button>
+    <button class="apply-btn" onclick="applyFilter()">
+      Apply Filter
+    </button>
 
   </div>
 
@@ -131,7 +172,7 @@
 <!-- RESULT -->
 <div id="result" class="result"></div>
 
-<script src="mating.js"></script>
+<script src="../js/mating.js"></script>
 
 </body>
 </html>
