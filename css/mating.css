@@ -12,7 +12,7 @@ body {
 /* HERO */
 .hero {
   height: 60vh;
-  background: url('mate.jpg') no-repeat center/cover;
+  background: url('../images/mate.jpg') no-repeat center/cover;
 }
 
 .overlay {
