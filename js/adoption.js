@@ -222,7 +222,7 @@ async function filterPets() {
                 <span class="fav-btn" onclick="toggleFavorite('${docSnap.id}', ${p.favorite || false})">
                   ${p.favorite ? "❤️" : "🤍"}
                 </span>
-                <img src="${pet.img || '../images/adoption.jpg'}">
+                <img src="${p.img || '../images/adoption.jpg'}">
                 <h3>${p.name}</h3>
                 <p>Breed: ${p.breed}</p>
                 <p>Age: ${p.age}</p>
