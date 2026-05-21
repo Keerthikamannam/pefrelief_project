@@ -1,77 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>PetRelief Portal</title>
-    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="css/home.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
+
 <header class="navbar">
+
     <h2 class="logo">PetRelief</h2>
+
     <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
-        <button class="btn" onclick="getStarted()">Get Started</button>
+        <a href="index.html">Home</a>
+        <a href="html/about.html">About</a>
+        <a href="html/resources.html">Resources</a>
+        <a href="html/contact.html">Contact</a>
+
+        <button class="btn" onclick="getStarted()">
+            Get Started
+        </button>
     </nav>
+
 </header>
 
 <!-- HERO -->
 <section class="hero">
 
     <h1>— LOOKING TO ADOPT A PET? —</h1>
-    <p>Explore pets up for adoption and bring your new companion home!</p>
+
+    <p>
+        Explore pets up for adoption and bring your new companion home!
+    </p>
 
     <!-- CAROUSEL -->
     <div class="carousel">
 
         <div class="card">
-            <img src="husky.jpg" alt="husky">
+
+            <img src="images/husky.jpg" alt="husky">
+
             <div class="info">
                 <h3>Bagira</h3>
                 <p>Husky • Male</p>
             </div>
+
         </div>
 
         <div class="card">
-            <img src="parrot.jpg" alt="parrot">
+
+            <img src="images/parrot.jpg" alt="parrot">
+
             <div class="info">
                 <h3>Katty</h3>
                 <p>Parrot • Male</p>
             </div>
+
         </div>
 
         <div class="card active">
-            <img src="rabbit.jpg" alt="rabbit">
+
+            <img src="images/rabbit.jpg" alt="rabbit">
+
             <div class="info">
                 <h3>Hancock</h3>
                 <p>Rabbit • Male</p>
             </div>
+
         </div>
 
         <div class="card">
-            <img src="dog.jpg" alt="dog">
+
+            <img src="images/dog.jpg" alt="dog">
+
             <div class="info">
                 <h3>Rocky</h3>
                 <p>Mixed dog • Male</p>
             </div>
+
         </div>
 
         <div class="card">
-            <img src="persian.jpg" alt="persian">
+
+            <img src="images/persian.jpg" alt="persian">
+
             <div class="info">
                 <h3>Snow</h3>
                 <p>Persian cat • Female</p>
             </div>
+
         </div>
 
     </div>
 
-    <button class="explore" onclick="goToExplore()">Explore Now!</button>
+    <button class="explore" onclick="goToExplore()">
+        Explore Now!
+    </button>
 
 </section>
 
@@ -80,12 +116,14 @@
     <div class="modal-content">
 
         <span class="close-btn" onclick="closePopup()">×</span>
-        
+
         <h2 id="formTitle">Login</h2>
 
         <!-- LOGIN FORM -->
         <div id="loginForm">
+
             <input type="email" id="loginemail" placeholder="Email">
+
             <input type="password" id="password" placeholder="Password">
 
             <p id="error" style="color:red;"></p>
@@ -94,26 +132,37 @@
 
             <p class="toggle-text">
                 Don't have an account?<br>
-                <span class="signup-link" onclick="showSignup()">Sign Up</span>
+
+                <span class="signup-link" onclick="showSignup()">
+                    Sign Up
+                </span>
             </p>
+
         </div>
 
         <!-- SIGNUP FORM -->
         <div id="signupForm" style="display:none;">
+
             <input type="email" id="signupEmail" placeholder="Email">
+
             <input type="password" id="signupPassword" placeholder="Password">
 
             <button onclick="signup()">Sign Up</button>
 
             <p class="toggle-text">
                 Already have an account?<br>
-                <span class="signup-link" onclick="showLogin()">Login</span>
+
+                <span class="signup-link" onclick="showLogin()">
+                    Login
+                </span>
             </p>
+
         </div>
 
     </div>
 
 </div>
+
 <!-- HOW IT WORKS -->
 <section class="how-it-works">
 
@@ -125,172 +174,82 @@
         <div class="how-left">
 
             <div class="how-step">
+
                 <div class="how-icon pink">
                     <i class="fa fa-search"></i>
                 </div>
+
                 <div>
                     <h3>Search Pet</h3>
+
                     <p>
-                        Find your furry companion by searching on our app. You can use filters 
-                        to narrow down your search, making it easy to find the pet that matches 
-                        your preferences and lifestyle.
+                        Find your furry companion by searching on our app.
                     </p>
                 </div>
+
             </div>
 
             <div class="how-step">
+
                 <div class="how-icon yellow">
                     <i class="fa fa-comments"></i>
                 </div>
+
                 <div>
                     <h3>Connect with Pet Parent</h3>
+
                     <p>
-                        Once you've found a pet you're interested in, connect with the pet parent. 
-                        This is your chance to learn more about the pet's personality, history, 
-                        and any specific care needs.
+                        Connect with pet parents and learn more.
                     </p>
                 </div>
+
             </div>
 
             <div class="how-step">
+
                 <div class="how-icon green">
                     <i class="fa fa-heart"></i>
                 </div>
+
                 <div>
                     <h3>Adopt Love</h3>
+
                     <p>
-                        After ensuring that it's a good fit, you're ready to adopt your new pet. 
-                        This step is where your journey as a pet parent begins, filled with love 
-                        and unforgettable moments.
+                        Begin your journey as a pet parent.
                     </p>
                 </div>
+
             </div>
 
         </div>
 
         <!-- RIGHT IMAGE -->
         <div class="how-right">
-            <img src="ui.jpg" alt="App Preview">
+
+            <img src="images/ui.jpg" alt="App Preview">
+
         </div>
 
     </div>
 
 </section>
-<!-- POPULAR ADOPTION CITIES -->
-<section class="cities-section">
 
-    <h2 class="cities-title">
-        <span></span> POPULAR ADOPTION CITIES <span></span>
-    </h2>
-
-    <div class="cities-container">
-
-        <!-- LEFT -->
-        <div class="city-column">
-            <div class="city-item"><i class="fa fa-map-marker-alt"></i> Ahmedabad</div>
-            <div class="city-item"><i class="fa fa-map-marker-alt"></i> Chennai</div>
-            <div class="city-item"><i class="fa fa-map-marker-alt"></i> Gurgaon</div>
-            <div class="city-item"><i class="fa fa-map-marker-alt"></i> Mumbai</div>
-        </div>
-
-        <!-- RIGHT -->
-        <div class="city-column">
-            <div class="city-item"><i class="fa fa-map-marker-alt"></i> Bangalore</div>
-            <div class="city-item"><i class="fa fa-map-marker-alt"></i> Delhi</div>
-            <div class="city-item"><i class="fa fa-map-marker-alt"></i> Hyderabad</div>
-            <div class="city-item"><i class="fa fa-map-marker-alt"></i> Pune</div>
-        </div>
-
-    </div>
-
-</section>
-<!-- FAQ SECTION -->
-<section class="faq-section">
-
-    <h2 class="faq-title">
-        <span></span> FREQUENTLY ASKED QUESTIONS <span></span>
-    </h2>
-
-    <div class="faq-container">
-
-        <div class="faq-item ">
-            <button class="faq-question">
-                What is Pet Adoption?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Pet adoption is the process of providing a loving and forever home to an animal in need. 
-                It typically involves adopting a pet from an animal shelter, rescue organization, or adoption center.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                Why Should I Consider Pet Adoption?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Pet adoption saves lives, reduces homelessness, and helps you find a pet that suits your lifestyle.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                What Types of Pets Are Available for Adoption?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Dogs, cats, rabbits, birds, and many more pets are available for adoption.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                Is Adoption Better Than Buying a Pet?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Yes, adoption is more ethical and helps reduce animal homelessness.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                How Do I Prepare for Bringing a New Pet Home?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Prepare food, bedding, toys, and a safe environment before bringing your pet home.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                Can I Adopt a Pet If I Live in an Apartment?
-                <span class="icon">+</span>
-            </button>
-            <div class="faq-answer">
-                Yes, choose pets suitable for small spaces and ensure proper care.
-            </div>
-        </div>
-
-    </div>
-
-</section>
 <!-- CONTACT SECTION -->
 <section class="contact-section">
 
     <h2 class="section-title">Contact Us</h2>
 
-    <p>Have questions about adoption? We're here to help you.</p>
+    <p>
+        Have questions about adoption? We're here to help you.
+    </p>
 
-    <button onclick="location.href='contact.html'" class="contact-btn">
+    <button onclick="location.href='html/contact.html'" class="contact-btn">
         Go to Contact Page
     </button>
 
 </section>
-<!-- CONTRIBUTORS SECTION -->
 
+<!-- CONTRIBUTORS -->
 <section class="contributors-section">
 
     <h2 class="contributors-title">Our Contributors</h2>
@@ -298,89 +257,42 @@
     <div class="contributors-container">
 
         <div class="contributor-card">
-            <img src="user1.jpg" alt="Contributor">
+
+            <img src="images/user1.jpg" alt="Contributor">
+
             <h3>Chamarthi Nithish</h3>
+
             <p>AM.SC.U4AID24008</p>
-            <a href="https://yourportfolio1.com" target="_blank">
-                View Portfolio
-            </a>
+
         </div>
 
         <div class="contributor-card">
-            <img src="user2.jpg" alt="Contributor">
+
+            <img src="images/user2.jpg" alt="Contributor">
+
             <h3>Kondeti Sahasra</h3>
+
             <p>AM.SC.U4AID24022</p>
-            <a href="https://yourportfolio2.com" target="_blank">
-                View Portfolio
-            </a>
+
         </div>
 
         <div class="contributor-card">
-            <img src="user3.jpg" alt="Contributor">
+
+            <img src="images/user3.jpg" alt="Contributor">
+
             <h3>Vemula Dhimirnath</h3>
+
             <p>AM.SC.U4AID24050</p>
 
-            <a href="https://yourportfolio3.com" target="_blank">
-                View Portfolio
-            </a>
         </div>
 
         <div class="contributor-card">
-            <img src="user4.jpg" alt="Contributor">
+
+            <img src="images/user4.jpg" alt="Contributor">
+
             <h3>Mannam Keerthika</h3>
+
             <p>AM.SC.U4AID24062</p>
-            <a href="https://yourportfolio4.com" target="_blank">
-                View Portfolio
-            </a>
-        </div>
-
-    </div>
-
-</section>
-<!-- FOOTER TOP -->
-<section class="footer-top">
-
-    <div class="footer-top-container">
-
-        <!-- LEFT -->
-        <div class="footer-contact">
-            <h2>Connect with us</h2>
-
-            <div class="contact-box">
-                <div>
-                    <a href="mailto:Petrelief.in@gmail.com" class="contact-box">
-                    <i class="fa fa-envelope"></i>
-                    <div>
-                        <p>Have questions? Mail Us</p>
-                        <span>Petrelief.in@gmail.com</span>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- RIGHT -->
-        <div class="footer-links-box">
-
-            <div>
-                <h4>Quick Links</h4>
-                <p onclick="location.href='home.html'">Home</p>
-                <p onclick="location.href='about.html'">about</p>
-                <p onclick="location.href='resources.html'">Resources</p>
-                <p onclick="location.href='contact.html'">contact</p>
-            </div>
-
-            <div>
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/petsrelief?igsh=emppY3o3aWttZzE4&utm_source=qr" target="_blank">
-                       <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/share/1E4FSCdL3Q/?mibextid=wwXIfr" target="_blank">
-                      <i class="fab fa-facebook"></i>
-                   </a>
-                </div>
-            </div>
 
         </div>
 
@@ -388,37 +300,47 @@
 
 </section>
 
-
-<!-- FOOTER BOTTOM -->
+<!-- FOOTER -->
 <footer class="footer-bottom">
 
     <div class="footer-columns">
-        <div>
-            <h3>Policy</h3>
-            <p class="policy-link" onclick="goToPage('privacy.html', this)">Privacy Policy</p>
-            <p class="policy-link" onclick="goToPage('refund.html', this)">Refund Policy</p>
-            <p class="policy-link" onclick="goToPage('cancellation.html', this)">Cancellation Policy</p>
-            <p class="policy-link" onclick="goToPage('terms.html', this)">Terms & Conditions</p>
 
-            <div class="social-icons" style="margin-top:10px;">
-                <a href="https://www.instagram.com/petsrelief?igsh=emppY3o3aWttZzE4&utm_source=qr" target="_blank">
-                       <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/share/1E4FSCdL3Q/?mibextid=wwXIfr" target="_blank">
-                      <i class="fab fa-facebook"></i>
-                </a>
-            </div>
+        <div>
+
+            <h3>Policy</h3>
+
+            <p class="policy-link"
+               onclick="goToPage('html/privacy.html', this)">
+               Privacy Policy
+            </p>
+
+            <p class="policy-link"
+               onclick="goToPage('html/refund.html', this)">
+               Refund Policy
+            </p>
+
+            <p class="policy-link"
+               onclick="goToPage('html/cancellation.html', this)">
+               Cancellation Policy
+            </p>
+
+            <p class="policy-link"
+               onclick="goToPage('html/terms.html', this)">
+               Terms & Conditions
+            </p>
+
         </div>
 
     </div>
 
-    <!-- BOTTOM BAR -->
     <div class="footer-bar">
         © Hyderabad, India | Petrelief Online Private Limited © 2025-2026
     </div>
 
 </footer>
-<script src="home.js"></script>
-</body>
-</html>
 
+<script src="js/home.js"></script>
+
+</body>
+
+</html>
