@@ -30,7 +30,7 @@ html, body {
     position: absolute;
     inset: 0;
 
-    background-image: url("paw.jpg");
+    background-image: url("../images/paw.jpg");
     background-size: 250px;
 
     opacity: 0.15;  
