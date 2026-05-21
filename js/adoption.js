@@ -6,21 +6,21 @@ async function addInitialPets() {
         return;
     }
 
-    const initialPets = [
-        {name:"Buddy", breed:"Labrador", age:2, type:"Dog", img:"a1.jpg"},
-        {name:"Max", breed:"Beagle", age:4, type:"Dog", img:"a2.jpg"},
-        {name:"Rocky", breed:"German Shepherd", age:5, type:"Dog", img:"a3.jpg"},
-        {name:"Patty", breed:"Rabbit", age:2, type:"Small", img:"a7.jpg"},
-        {name:"Luna", breed:"Persian", age:1, type:"Cat", img:"a4.jpg"},
-        {name:"Milo", breed:"Siamese", age:2, type:"Cat", img:"a5.jpg"},
-        {name:"tobby", breed:"husky", age:5, type:"Dog", img:"a12.jpg"},
-        {name:"Bunny", breed:"Rabbit", age:1, type:"Small", img:"a6.jpg"},
-        {name:"Coco", breed:"Parrot", age:2, type:"Small", img:"a11.jpg"},
-        {name:"katty", breed:"cat", age:2, type:"Cat", img:"a13.jpg"},
-        {name:"Bruno", breed:"Doberman", age:6, type:"Dog", img:"a9.jpg"},
-        {name:"Bella", breed:"Shih Tzu", age:2, type:"Dog", img:"a8.jpg"},
-        {name:"Shadow", breed:"Indie", age:7, type:"Dog", img:"a10.jpg"}
-    ];
+   const initialPets = [
+    {name:"Buddy", breed:"Labrador", age:2, type:"Dog", img:"../images/a1.jpg"},
+    {name:"Max", breed:"Beagle", age:4, type:"Dog", img:"../images/a2.jpg"},
+    {name:"Rocky", breed:"German Shepherd", age:5, type:"Dog", img:"../images/a3.jpg"},
+    {name:"Patty", breed:"Rabbit", age:2, type:"Small", img:"../images/a7.jpg"},
+    {name:"Luna", breed:"Persian", age:1, type:"Cat", img:"../images/a4.jpg"},
+    {name:"Milo", breed:"Siamese", age:2, type:"Cat", img:"../images/a5.jpg"},
+    {name:"tobby", breed:"husky", age:5, type:"Dog", img:"../images/a12.jpg"},
+    {name:"Bunny", breed:"Rabbit", age:1, type:"Small", img:"../images/a6.jpg"},
+    {name:"Coco", breed:"Parrot", age:2, type:"Small", img:"../images/a11.jpg"},
+    {name:"katty", breed:"cat", age:2, type:"Cat", img:"../images/a13.jpg"},
+    {name:"Bruno", breed:"Doberman", age:6, type:"Dog", img:"../images/a9.jpg"},
+    {name:"Bella", breed:"Shih Tzu", age:2, type:"Dog", img:"../images/a8.jpg"},
+    {name:"Shadow", breed:"Indie", age:7, type:"Dog", img:"../images/a10.jpg"}
+];
 
     // upload all pets
     for (let pet of initialPets) {
