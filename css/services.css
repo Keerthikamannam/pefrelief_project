@@ -19,7 +19,7 @@ body::before {
     position: fixed;
     inset: 0;
 
-    background-image: url("paw.jpg"); /* your image */
+    background-image: url("../images/paw.jpg");/* your image */
     background-size: 220px;           /* spacing */
     background-repeat: repeat;
 
