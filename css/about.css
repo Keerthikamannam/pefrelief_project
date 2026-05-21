@@ -41,7 +41,7 @@ body {
     position: absolute;
     inset: 0;
 
-    background-image: url("paw.jpg");
+    background-image: url("../images/paw.jpg");
     background-size: 200px; 
     background-repeat: repeat;
 
