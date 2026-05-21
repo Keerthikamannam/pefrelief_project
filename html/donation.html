@@ -5,21 +5,16 @@
 <title>Donation Page</title>
 
 <link rel="stylesheet" href="../css/donation.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
 <!-- HERO -->
 <section class="hero">
-
   <div class="hero-text">
     <h1>Make a Charitable Donation</h1>
-
     <p>Help animals in need by contributing to rescue and care.</p>
-
     <button onclick="openModal()">Donate Now</button>
   </div>
 
@@ -31,32 +26,26 @@
     <img src="../images/d5.jpg">
     <img src="../images/d6.jpg">
   </div>
-
 </section>
 
 <!-- COUNTERS -->
 <section class="stats">
-
   <div>
     <h2 id="dogs">0</h2>
     <p>Stray Dogs</p>
   </div>
-
   <div>
     <h2 id="cats">0</h2>
     <p>Stray Cats</p>
   </div>
-
   <div>
     <h2 id="others">0</h2>
     <p>Other Strays</p>
   </div>
-
 </section>
 
 <!-- DONATION -->
 <section class="donation-section">
-
   <h2>Help a Rescue</h2>
 
   <div class="amounts">
@@ -66,64 +55,41 @@
     <button onclick="selectAmount(this,10000)">10000 INR</button>
   </div>
 
-  <button class="donate-btn" onclick="openModal()">
-    Donate Selected
-  </button>
-
+  <button class="donate-btn" onclick="openModal()">Donate Selected</button>
 </section>
-
-<h2 style="text-align:center;" class="sponsor-title">
-  💖 Sponsoring <span id="selectedPetName"></span>
-</h2>
-
+<h2 style="text-align:center;" class="sponsor-title">💖 Sponsoring <span id="selectedPetName"></span></h2>
 <!-- MODAL -->
 <div class="modal" id="modal">
-
   <div class="modal-content">
-
     <h3>Donate 🐾</h3>
-
     <input type="number" id="donationAmount" placeholder="Enter amount">
-
     <button onclick="payNow()">Pay Now</button>
-
     <button onclick="closeModal()">Close</button>
-
   </div>
-
 </div>
 
 <!-- HELP -->
 <section class="help">
-
   <h2>HELP A RESCUE IN NEED</h2>
-
   <p id="selectedPetText" style="font-weight:600; color:#0077cc;"></p>
-
   <div class="help-grid">
-
     <div>
       <h3>500 INR</h3>
       <p>Pays for meals for the rescues.</p>
     </div>
-
     <div>
       <h3>1000 INR</h3>
       <p>Pays for essential vaccinations.</p>
     </div>
-
     <div>
       <h3>2000 INR</h3>
       <p>Pays for a neuter/spay.</p>
     </div>
-
     <div>
       <h3>10000 INR</h3>
       <p>Pays for surgery for an injured rescue.</p>
     </div>
-
   </div>
-
 </section>
 
 <!-- DONATION METHODS -->
@@ -131,102 +97,70 @@
 
   <!-- LEFT BOX -->
   <div class="box">
-
     <h3>DONATIONS IN INDIAN RUPEES</h3>
 
-    <button class="highlight-btn" onclick="openPayment()">
-      CLICK TO DONATE(UPI)
-    </button>
+    <button class="highlight-btn" onclick="openPayment()">CLICK TO DONATE(UPI)</button>
 
     <h4>BY BANK TRANSFER (RTGS/NEFT/IMPS)</h4>
 
     <div class="card">
-
       <p><b>BANK NAME</b></p>
-
       <p>Account no: 11111111</p>
-
       <p>Branch: Area, City 000000, India</p>
-
       <p>IFSC Code: ABCD67890</p>
 
       <br>
 
       <p><b>BANK NAME</b></p>
-
       <p>Account no: 0000000000</p>
-
       <p>Branch: Area, City 111111, India</p>
-
       <p>IFSC Code: ABCD12345</p>
-
     </div>
 
     <h4>BY CHEQUE</h4>
 
     <div class="card">
-
       <p>Drawn On</p>
-
       <p>Blue Cross of India</p>
 
       <br>
 
       <p>Mail/Courier to Our Registered Office :</p>
-
       <p>1 A Eldams Road, Alwarpet, Chennai 600018, Tamil Nadu, India.</p>
-
     </div>
-
   </div>
+
 
   <!-- RIGHT BOX -->
   <div class="box">
-
     <h3>DONATIONS IN OTHER CURRENCY</h3>
 
-    <a href="https://www.paypal.com/paypalme/yourusername"
-       target="_blank"
-       class="highlight-btn">
-
+    <a href="https://www.paypal.com/paypalme/yourusername" target="_blank" class="highlight-btn">
       CLICK TO DONATE ONLINE (PAYPAL)
-
-    </a>
+   </a>
 
     <h4>BY BANK TRANSFER (FCRA a/c)</h4>
 
     <div class="card">
-
       <p><b>STATE BANK OF INDIA</b></p>
-
       <p>Beneficiary Name: Blue Cross Of India</p>
-
       <p>FCRA Account no: 39853103064</p>
-
       <p>Branch: 11 Sansad Marg, New Delhi 110001, India</p>
-
       <p>SWIFT Code: SBININBB104</p>
-
       <p>IFSC Code: SBIN0000691</p>
-
     </div>
 
     <h4>BY CHEQUE</h4>
 
     <div class="card">
-
       <p>Drawn On</p>
-
       <p>Blue Cross of India</p>
 
       <br>
 
       <p>Mail/Courier to Our Registered Office :</p>
-
       <p>1 A Eldams Road, Alwarpet, Chennai 600018, Tamil Nadu, India.</p>
-
     </div>
-
   </div>
 
 </section>
@@ -235,27 +169,22 @@
 <section class="items">
 
   <div class="box">
-
     <h3>BUY US THINGS WE NEED</h3>
 
-    <a href="https://www.amazon.in"
-       target="_blank"
-       class="highlight-btn">
-
+    <!-- AMAZON -->
+    <a href="https://www.amazon.in" target="_blank" class="highlight-btn">
       CLICK TO BUY FROM AMAZON
-
     </a>
 
     <div class="card">
       Rice, Pulses, Wheat, Corn, Bird Feed
     </div>
-
   </div>
 
   <div class="box">
-
     <h3>DONATE (USED) STUFF</h3>
 
+    <!-- EMAIL -->
     <a href="mailto:help@petcare.com" class="highlight-btn">
       CLICK TO EMAIL US
     </a>
@@ -263,18 +192,15 @@
     <div class="card">
       Old Newspapers, Towels, Bedsheets
     </div>
-
   </div>
 
 </section>
 
 <!-- WHY -->
 <section class="why">
-
   <h2>WHY DONATE?</h2>
 
   <div class="why-content">
-
     <div class="icon">?</div>
 
     <div class="text">
@@ -282,26 +208,18 @@
       <p>Every rupee directly supports them.</p>
       <b>80G Tax Benefits Available</b>
     </div>
-
   </div>
-
 </section>
 
 <!-- VIDEO -->
 <section class="video">
 
   <div class="video-card">
-
+    
     <img src="https://img.youtube.com/vi/VjnHW07wZn4/0.jpg" alt="video thumbnail">
-
     <div class="play-btn" onclick="playVideo()">▶</div>
-
-    <a href="https://youtu.be/VjnHW07wZn4"
-       target="_blank"
-       class="video-link">
-
+    <a href="https://youtu.be/VjnHW07wZn4" target="_blank" class="video-link">
       Watch Video on YouTube
-
     </a>
 
   </div>
