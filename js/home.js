@@ -71,43 +71,53 @@ function signup() {
 
 // LOGIN FUNCTION
 function login() {
+
     const email = document.getElementById("loginemail").value.trim();
     const password = document.getElementById("password").value.trim();
 
     // validation
     if (!email || !password) {
-        document.getElementById("error").innerText = "Please enter all fields!";
+        document.getElementById("error").innerText =
+            "Please enter all fields!";
         return;
     }
-    const redirectPage =
-    sessionStorage.getItem("redirectAfterLogin") || "dashboard.html";
-
-    sessionStorage.removeItem("redirectAfterLogin");
-
-// redirect
-window.location.href = redirectPage;
 
     let users = JSON.parse(localStorage.getItem("users")) || [];
 
-    const user = users.find(u => u.email === email && u.password === password);
+    // check user
+    const user = users.find(
+        u => u.email === email && u.password === password
+    );
 
+    // invalid credentials
     if (!user) {
-        document.getElementById("error").innerText = "Invalid credentials!";
+        document.getElementById("error").innerText =
+            "Invalid credentials!";
         return;
     }
+
     // store login state
     sessionStorage.setItem("loggedIn", "true");
     sessionStorage.setItem("currentUser", email);
 
-    // CLOSE POPUP (IMPORTANT)
+    // get redirect page
+    const redirectPage =
+        sessionStorage.getItem("redirectAfterLogin") ||
+        "dashboard.html";
+
+    sessionStorage.removeItem("redirectAfterLogin");
+
+    // clear errors
+    document.getElementById("error").innerText = "";
+
+    // close popup
     closePopup();
 
-    // ✅ FORCE REDIRECT (FIX)
+    // redirect
     setTimeout(() => {
-        window.location.href = "dashboard.html";
+        window.location.href = redirectPage;
     }, 200);
 }
-
 function goToExplore() {
     const isLoggedIn = sessionStorage.getItem("loggedIn");
 
