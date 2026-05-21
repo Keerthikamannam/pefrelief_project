@@ -14,7 +14,7 @@ body{
 
 /* HERO */
 .hero{
-    background:url("groom.jpg") no-repeat 50% 20% ;
+    background:url("../images/groom.jpg") no-repeat 50% 20% ;
     height:350px;
     position:relative;
 }
