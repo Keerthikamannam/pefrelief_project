@@ -148,10 +148,10 @@ https://github.com/Keerthikamannam/pefrelief_project/
 
 | Team Member | Contribution |
 |---|---|
-| Member 1 | `index.html`, `training.html`, `grooming.html`, `about.html` |
-| Member 2 | `dashboard.html`, `home.html`, `donation.html` `contact.html` |
-| Member 3 | `volunteer.html`, `service.html`, `resources.html`, `medical.html` |
-| Member 4 | `boarding.html`, `dogwalk.html`, `mating.html`, `adoption.html`, Testing & Documentation |
+| Nithish  | `contact.html`, `training.html`, `grooming.html`, `about.html` |
+| Sahasra | `dashboard.html`, `home.html`, `donation.html` `index.html` |
+| Dhimirnath | `volunteer.html`, `service.html`, `resources.html`, `medical.html` |
+| Keerthika | `boarding.html`, `dogwalk.html`, `mating.html`, `adoption.html`, Testing & Documentation |
 
 
 # 📖 Learning Outcomes
